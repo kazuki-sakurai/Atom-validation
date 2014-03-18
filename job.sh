@@ -9,7 +9,11 @@ ana=ANA; vname=VNAME; fname=FNAME
 event_path=$wkdir/../Validation-events/$ana
 
 cd $wkdir/Analyses/$ana
-atom -a $ana $event_path/$fname 
+atom -a $ana $event_path/$fname
+mv atom.yoda.root $vname.root
+mv atom.yoda.yoda $vname.yoda
+
+ 
 
 ######################################################
 cd $wkdir

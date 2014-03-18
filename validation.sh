@@ -26,12 +26,27 @@ done
 
 source envsetting.sh
 
+if [[ ! -d $valdir/../Validation-events ]]; then
+    echo $valdir/../Validation-events' will be created. OK?'  
+    echo '[y]/[n]'
+    read flag
+    if [[ $flag == 'y' ]]; then
+        mkdir $valdir/../Validation-events
+    else
+        echo 'Abort'; exit 
+    fi 
+fi
+
 for ana in ${alist[@]}; do
 
     get_names $ana
     for ((i=0; i < ${#fname_list[@]}; i++)); do    
         vname=${vname_list[$i]}
         fname=${fname_list[$i]}
+
+        if [[ ! -d $valdir/../Validation-events/$ana ]]; then
+            mkdir $valdir/../Validation-events/$ana
+        fi
 
         if [[ ! -f $valdir/../Validation-events/$ana/$fname ]]; then
             echo $ana/$fname does not exist.
