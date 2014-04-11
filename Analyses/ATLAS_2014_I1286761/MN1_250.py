@@ -9,9 +9,26 @@ from math import *
 sys.path.append('../..')
 from functions import *
 
-vname = 'EN1_250'
-
 if __name__ == '__main__':
+
+    vname = 'MN1_250'
+
+    table_name = '$\\tilde \\mu^\\pm(250) \\to \\mu^\\pm \\tilde \\chi_1^0(10)$ (ATLAS\\_2014\\_I1286761 (1403.5294))'
+    description = ''
+
+    description = '''
+        \\begin{itemize}
+        \\item  Process: $\\tilde \\mu^+ \\tilde \\mu^-: \\tilde \\mu^\\pm \\to \\mu^\\pm \\tilde \\chi_1^0$.
+        \\item  Mass: $m_{\\tilde \\mu} = 250$~GeV, $m_{\\tilde \\chi_1^0} = 10$~GeV.
+        \\item  The number of events: $2 \\cdot 10^3$.
+        \\item  Event Generator: {\\tt Herwig++ 2.5.2}.    
+        \\end{itemize}    
+    '''
+
+    table_caption_SF = '''
+        The cut-flow table for the same flavour channel.
+    '''
+
 
     inputfile = vname + '.root'
     if len(sys.argv) == 2: inputfile = sys.argv[1]    
@@ -21,19 +38,32 @@ if __name__ == '__main__':
     Ntot_exp = 5000.
     per = 100.
     
-    initial_list = [ 
-                    ['= 2 OSlep pT > 35, 20: SF',  51.2],
-                    ['Jet Veto: SF',               19.4],
-                    ['Z Veto: SF',                 18.7],
-                    ['mT2 90: SF',                 11.7],
-                    ['mT2 120: SF',                 9.1],
-                    ['mT2 150: SF',                 7.0]]
+    initial_list_SF = [ 
+                    ['= 2 OSlep pT > 35, 20: SF',   51.2, '$=2$ OSlep $p_T > 35, 20$: SF'],
+                    ['Jet Veto: SF',                19.4, 'Jet veto: SF'],
+                    ['Z Veto: SF',                  18.7, '$Z$ veto: SF'],
+                    ['mT2 90: SF',                  11.7, '$m_{T2} > 90$: SF'],
+                    ['mT2 120: SF',                  9.1, '$m_{T2} > 20$: SF'],
+                    ['mT2 150: SF',                  7.0, '$m_{T2} > 150$: SF']
+                    ]
 
     eff_dict = {}
     err_dict = {}
-    for name, val in initial_list:
+    for name, val, texname in initial_list_SF:
         eff_dict[name] = eff_dict0[name]/eff_dict0['= 2 OSlep pT > 35, 20: SF']
         err_dict[name] = err_dict0[name]/eff_dict0['= 2 OSlep pT > 35, 20: SF']        
 
-    cutflow_generation(vname, initial_list, ananame, eff_dict, err_dict, Ntot_exp)
+    table_lines_SF = cutflow_generation(ananame, vname+'_SF', table_caption_SF, initial_list_SF, eff_dict, err_dict, Ntot_exp)
+
+    fout = open(vname + '.tex', 'w')
+    tex = tex_format()
+    fout.write(tex.begin_document)
+    fout.write('\n')
+    fout.write('\\subsection*{' + table_name + '} \n')
+    fout.write('\n')    
+    fout.write(description)    
+    fout.write('\n')        
+    for t in table_lines_SF: fout.write(t + '\n')
+    fout.write('\n')        
+    fout.write(tex.end_document)
 

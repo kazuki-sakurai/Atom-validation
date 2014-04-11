@@ -7,7 +7,7 @@ import ROOT
 import sys
 import os
 from math import *
-from tex_witter import *
+from tex_writer import *
 
 col = {
     'clear': '\033[0m',
@@ -54,11 +54,13 @@ def GetEfficiencies(filename):
     return AnaList[0], effi, err, pid
 
 
-def cutflow_generation(ananame, vname, table_name, description, table_caption, 
-                       initial_list, eff_dict, err_dict, Ntot_exp):
+def cutflow_generation(ananame, vname, table_caption, 
+                       initial_list, eff_dict, err_dict, Ntot_exp, i_denom = []):
 
     per = 100.
 
+    denom_flag = False
+    if i_denom == []: denom_flag = True
     #######################################################
     #          Setting experimental efficiencies          #  
     #######################################################
@@ -88,6 +90,7 @@ def cutflow_generation(ananame, vname, table_name, description, table_caption,
     ratio_eff_sig = ['']
     for i in range(len(name_list)):          
         name = name_list[i]
+        if denom_flag: i_denom.append(i-1)     
         eff = eff_dict[name]
         err = err_dict[name]
         eff_atom.append(per * eff)
@@ -100,7 +103,6 @@ def cutflow_generation(ananame, vname, table_name, description, table_caption,
     #######################################################
     #          Setting relative efficiencies              #  
     #######################################################
-    i_denom = ['']
     Reff_exp = ['']
     Rerr_exp = ['']
     Reff_atom = ['']
@@ -109,7 +111,7 @@ def cutflow_generation(ananame, vname, table_name, description, table_caption,
     ratio_R_sig = ['']    
     for i in range(1, len(name_list)):      
         nev = nev_exp[i]
-        iprev = i - 1
+        iprev = i_denom[i]
         prevnev = nev_exp[iprev]
         Reff_exp.append(nev/prevnev)
         Rerr_exp.append(sqrt(nev)/prevnev)
@@ -119,8 +121,6 @@ def cutflow_generation(ananame, vname, table_name, description, table_caption,
         preveff = eff_atom[iprev]
         Reff_atom.append(eff/preveff)
         Rerr_atom.append(err/preveff)
-
-        i_denom.append(iprev)
 
         ratio_R.append( Reff_atom[i]/Reff_exp[i] )
 
@@ -134,7 +134,7 @@ def cutflow_generation(ananame, vname, table_name, description, table_caption,
                  eff_exp, err_exp, eff_atom, err_atom, ratio_eff, ratio_eff_sig, 
                  i_denom, Reff_exp, Rerr_exp, Reff_atom, Rerr_atom, ratio_R, ratio_R_sig)    
 
-    texlines = make_table(ananame, vname, table_name, description, table_caption, 
+    texlines = make_table(ananame, vname, table_caption, 
                texname_list, eff_exp, err_exp, eff_atom, err_atom, ratio_eff, ratio_eff_sig, 
                i_denom, Reff_exp, Rerr_exp, Reff_atom, Rerr_atom, ratio_R, ratio_R_sig)
 

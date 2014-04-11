@@ -1,5 +1,35 @@
 #!usr/bin/env python
 
+class tex_format:
+    begin_document = '''
+        \\documentclass[12pt]{article}
+
+        \\setlength\\topmargin{0mm}
+        \\setlength\\headheight{0mm}
+        \\setlength\\headsep{0mm} 
+        \\setlength\\oddsidemargin{0mm}
+        \\setlength\\evensidemargin{0mm}
+        \\setlength\\textwidth{165mm}
+        \\setlength\\textheight{220mm}    
+
+        \\usepackage{fancyvrb}
+        \\usepackage{amssymb}
+        \\usepackage{amsmath}
+        \\usepackage{enumerate}
+        \\usepackage{slashed}
+        \\usepackage{graphicx}
+        \\usepackage{color}
+        \\usepackage[tight]{subfigure}
+        \\usepackage{float}
+        \\usepackage{ulem}
+        \\usepackage{url}
+        \\usepackage{colortbl}
+        
+        \\begin{document}
+    '''
+    end_document = '''        
+        \\end{document}
+    '''
 
 def rout(val, n):
     try:
@@ -7,7 +37,7 @@ def rout(val, n):
     except:
         return val
 
-def make_table(ananame, vname, table_name, description, table_caption, 
+def make_table(ananame, vname, table_caption, 
                texname_list, eff_exp, err_exp, eff_atom, err_atom, ratio_eff, ratio_eff_sig, 
                i_denom, Reff_exp, Rerr_exp, Reff_atom, Rerr_atom, ratio_R, ratio_R_sig):
     
@@ -30,47 +60,7 @@ def make_table(ananame, vname, table_name, description, table_caption,
 
         table_lists.append(line_list)
 
-    texlines = []
-
-    texlines.append('\\documentclass[12pt]{article}')
-
-    texlines.append('\\setlength\\topmargin{0mm}')
-    texlines.append('\\setlength\headheight{0mm}')
-    texlines.append('\\setlength\headsep{0mm}') 
-    texlines.append('\\setlength\oddsidemargin{0mm}')
-    texlines.append('\\setlength\evensidemargin{0mm}')
-    texlines.append('\\setlength\\textwidth{165mm}')
-    texlines.append('\\setlength\\textheight{220mm}')    
-
-    texlines.append('\\usepackage{fancyvrb}')
-    texlines.append('\\usepackage{amssymb}')
-    texlines.append('\\usepackage{amsmath}')
-    texlines.append('\\usepackage{enumerate}')
-    texlines.append('\\usepackage{slashed}')
-    texlines.append('\\usepackage{graphicx}')
-    texlines.append('\\usepackage{color}')
-    texlines.append('\\usepackage[tight]{subfigure}')
-    texlines.append('\\usepackage{float}')
-    texlines.append('\\usepackage{ulem}')
-    texlines.append('\\usepackage{url}')
-    texlines.append('\\usepackage{colortbl}')
-    texlines.append('')
-    texlines.append('')
-    texlines.append('\\begin{document}')
-    texlines.append('')
-    texlines.append('\\subsection*{ ' + table_name + ' }')
-    texlines.append('')
-    texlines.append(description)
-    texlines.append('')
-    texlines.append('')
-
-    texlines += table_writer(table_lists, vname, table_caption)
-
-    texlines.append('')
-    texlines.append('')    
-    texlines.append('\\end{document}')
-
-    return texlines
+    return table_writer(table_lists, vname, table_caption)
 
 
 def table_writer(table_lists_orig, vname, table_caption):
@@ -125,9 +115,6 @@ def table_writer(table_lists_orig, vname, table_caption):
 
     headline = ''
     for elem in header: headline += elem + ' & '
-
-    print 'head line = ', len(header)
-    print 'tab line = ', len(table_lists[0])
         
     #################################################
 
@@ -149,7 +136,7 @@ def table_writer(table_lists_orig, vname, table_caption):
 
     texlines.append('\\end{tabular}')
     texlines.append('}')
-    texlines.append('\\caption{' + table_caption + '}') 
+    texlines.append('\\caption{\\small ' + table_caption + '}') 
     texlines.append('\\label{tab:cflow_' + vname + '}')
     texlines.append('\\end{center}')
     texlines.append('\\label{default}')
