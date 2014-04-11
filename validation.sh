@@ -24,7 +24,7 @@ for ana in ${alist0[@]}; do
     fi
 done 
 
-source envsetting.sh
+source setting.sh
 
 if [[ ! -d $valdir/../Validation-events ]]; then
     echo $valdir/../Validation-events' will be created. OK?'  
@@ -39,29 +39,47 @@ fi
 
 for ana in ${alist[@]}; do
 
+    echo $ana
+    unset vname_list; unset fname_list
+
     get_names $ana
+
+    #for ((i=0; i < ${#fname_list[@]}; i++)); do    
+    #    echo ${vname_list[$i]}, ${fname_list[$i]}
+    #done
+
     for ((i=0; i < ${#fname_list[@]}; i++)); do    
         vname=${vname_list[$i]}
         fname=${fname_list[$i]}
+
+        echo $vname, $fname
 
         if [[ ! -d $valdir/../Validation-events/$ana ]]; then
             mkdir $valdir/../Validation-events/$ana
         fi
 
-        if [[ ! -f $valdir/../Validation-events/$ana/$fname ]]; then
+        while [[ ! -f $valdir/../Validation-events/$ana/$fname ]]; do
             echo $ana/$fname does not exist.
-            echo Download from the server.
-            cd $valdir/../Validation-events/$ana
-            linkhead='atom@lxplus.cern.ch:www/Validation-events/'
-            scp $linkhead$fname.gz .
-            gunzip $fname.gz
-            cd $valdir
-        fi
+            echo 'Download from the server? [y]/[n]'
+            read answer
+            if [[ $answer == 'y' ]]; then
+                cd $valdir/../Validation-events/$ana
+                linkhead='atom@lxplus.cern.ch:www/Validation-events'
+                scp $linkhead'/'$ana'/'$fname.gz ./temp.gz && mv temp.gz $fname.gz && gunzip $fname.gz
+                cd $valdir
+            else                
+                break
+            fi
+        done
 
         script=$valdir/Analyses/$ana/script.sh
         sed -e "s|ATOM_PATH|$atom_path|g" job.sh | sed -e "s|ANA|$ana|g" | sed -e "s|VNAME|$vname|g" | sed -e "s|FNAME|$fname|g" > $script
         chmod 755 $script
         nix-shell $nixpkgs_path -A hepNixOverlay.dev.AtomDev --command $script
+
+        cd $valdir/Analyses/$ana
+        ./$vname.py $vname.root | tee $vname.out
+        cd $valdir
 
     done    
 done

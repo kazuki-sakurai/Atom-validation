@@ -1,7 +1,7 @@
 #!/bin/bash
 wkdir=`pwd`
-source ATOM_PATH/bin/atomenv.sh
-ana=ANA; vname=VNAME; fname=FNAME
+source /Users/sakurai/atom/Atom-target/bin/atomenv.sh
+ana=ATLAS_2014_I1286761; vname=WWb; fname=C1wN1_140-20_5E4.hepmc
 
 ######################################################
 
