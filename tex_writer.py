@@ -33,7 +33,7 @@ class tex_format:
 
 def rout(val, n):
     try:
-        return '$' + str(round(val, n)) + '$'
+        return '$ '+ str(round(val, n)) +' $'
     except:
         return val
 
@@ -62,19 +62,20 @@ def make_table(ananame, vname, table_caption,
 
         table_lists.append(line_list)
 
-    return table_writer(table_lists, vname, table_caption)
+    return table_writer(table_lists, vname, table_caption, ratio_eff, ratio_eff_sig, ratio_R, ratio_R_sig)
 
 
-def table_writer(table_lists_orig, vname, table_caption):
+def table_writer(table_lists_orig, vname, table_caption, ratio_eff, ratio_eff_sig, ratio_R, ratio_R_sig):
 
     table_lists = []
-    for line_list in table_lists_orig:
+    for i in range(len(table_lists_orig)):
 
+        line_list = table_lists_orig[i]
         try:
-            eff = float(line_list[4])
-            eff_sig = float(line_list[5]) 
-            Rval = float(line_list[9])
-            Rsig = float(line_list[10])
+            eff = ratio_eff[i]
+            eff_sig = ratio_eff_sig[i]
+            Rval = ratio_R[i]
+            Rsig = ratio_R_sig[i]
             warn = 0    
             if abs(1. - eff) > 0.300000001:
                 if abs(eff_sig) > 4.00000001:
@@ -127,7 +128,7 @@ def table_writer(table_lists_orig, vname, table_caption):
     texlines.append('\\renewcommand{\\arraystretch}{1.3}')
     texlines.append('\\begin{table}[h!]')
     texlines.append('\\begin{center}')
-    texlines.append('\\scalebox{0.7}[0.8]{ ')
+    texlines.append('\\scalebox{0.65}[0.75]{ ')
 
     texlines.append('\\begin{tabular}{c|l||c|c|>{\columncolor{yellow}}c|c||c|c|c|>{\columncolor{yellow}}c|c}')
     texlines.append('\\hline')
