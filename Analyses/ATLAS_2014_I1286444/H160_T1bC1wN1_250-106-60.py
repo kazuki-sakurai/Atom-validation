@@ -46,7 +46,7 @@ if __name__ == '__main__':
                     ['H160: pT(lep1) < 60: SF',        75.3,  'H160: $p_T(\\ell_1) < 60$: SF']]
 
     initial_list_DF = [ 
-                    ['pT(lep1) > 25: DF',            2470.4,  '$p_T(\\ell_1) > 25$: DF'],,  '$p_T(\\ell_1) > 25$: DF'],
+                    ['pT(lep1) > 25: DF',            2470.4,  '$p_T(\\ell_1) > 25$: DF'],
                     ['H160: =2 b-jets: DF',           893.5,  'H160: $=2 b$-jets: DF'],
                     ['H160: mT2(b-jet) > 160: DF',    137.7,  'H160: $m_{T2}({\\rm b-jet}) > 160$: DF'],
                     ['H160: mT2 < 90: DF',            135.0,  'H160: $m_{T2} < 90$: DF'],
@@ -61,8 +61,10 @@ if __name__ == '__main__':
         eff_dict[name] = eff_dict0[name]/eff_dict0['pT(lep1) > 25: DF']
         err_dict[name] = err_dict0[name]/eff_dict0['pT(lep1) > 25: DF']        
 
-    table_lines_SF = cutflow_generation(ananame, vname+'_SF', table_caption_SF, initial_list_SF, eff_dict, err_dict, Ntot_exp)
-    table_lines_DF = cutflow_generation(ananame, vname+'_DF', table_caption_DF, initial_list_DF, eff_dict, err_dict, Ntot_exp)
+    NMC_first_SF = Ntot_exp * eff_dict0['pT(lep1) > 25: SF'] # geussed from Atom efficiency 
+    table_lines_SF = cutflow_generation(ananame, vname+'_SF', table_caption_SF, initial_list_SF, eff_dict, err_dict, NMC_first_SF)
+    NMC_first_DF = Ntot_exp * eff_dict0['pT(lep1) > 25: DF'] # geussed from Atom efficiency     
+    table_lines_DF = cutflow_generation(ananame, vname+'_DF', table_caption_DF, initial_list_DF, eff_dict, err_dict, NMC_first_DF)
 
     fout = open(vname + '.tex', 'w')
     tex = tex_format()

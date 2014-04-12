@@ -53,7 +53,8 @@ if __name__ == '__main__':
         eff_dict[name] = eff_dict0[name]/eff_dict0['Lepton multi']
         err_dict[name] = err_dict0[name]/eff_dict0['Lepton multi']        
 
-    table_lines = cutflow_generation(ananame, vname, table_caption, initial_list, eff_dict, err_dict, Ntot_exp)
+    NMC_first = Ntot_exp * eff_dict0['Lepton multi'] # geussed from Atom efficiency 
+    table_lines = cutflow_generation(ananame, vname, table_caption, initial_list, eff_dict, err_dict, NMC_first)
 
     fout = open(vname + '.tex', 'w')
     tex = tex_format()

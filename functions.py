@@ -55,7 +55,7 @@ def GetEfficiencies(filename):
 
 
 def cutflow_generation(ananame, vname, table_caption, 
-                       initial_list, eff_dict, err_dict, Ntot_exp, i_denom = []):
+                       initial_list, eff_dict, err_dict, NMC_first, i_denom = []):
 
     per = 100.
 
@@ -73,9 +73,9 @@ def cutflow_generation(ananame, vname, table_caption,
         name_list.append(name)
         texname_list.append(texname)
         eff = inival/initial_list[0][1]
-        nev = Ntot_exp * eff
+        nev = NMC_first * eff
         nerr = sqrt(nev)
-        eff_err = nerr/Ntot_exp
+        eff_err = nerr/NMC_first
 
         eff_exp.append(per * eff)
         err_exp.append(per * eff_err)
@@ -99,6 +99,7 @@ def cutflow_generation(ananame, vname, table_caption,
             ratio_eff.append( eff_atom[i]/eff_exp[i] )
             err = sqrt(err_atom[i]**2 + err_exp[i]**2)
             ratio_eff_sig.append( (eff_atom[i] - eff_exp[i])/err )
+    i_denom[0] = ''
 
     #######################################################
     #          Setting relative efficiencies              #  
@@ -113,14 +114,22 @@ def cutflow_generation(ananame, vname, table_caption,
         nev = nev_exp[i]
         iprev = i_denom[i]
         prevnev = nev_exp[iprev]
-        Reff_exp.append(nev/prevnev)
-        Rerr_exp.append(sqrt(nev)/prevnev)
+        if prevnev > 0:
+            Reff_exp.append(nev/prevnev)
+            Rerr_exp.append(sqrt(nev)/prevnev)
+        else:
+            Reff_exp.append(0.)
+            Rerr_exp.append(0.)
 
         eff = eff_atom[i]
         err = err_atom[i]        
         preveff = eff_atom[iprev]
-        Reff_atom.append(eff/preveff)
-        Rerr_atom.append(err/preveff)
+        if preveff > 0:
+            Reff_atom.append(eff/preveff)
+            Rerr_atom.append(err/preveff)
+        else:
+            Reff_atom.append(0.)
+            Rerr_atom.append(0.)
 
         ratio_R.append( Reff_atom[i]/Reff_exp[i] )
 

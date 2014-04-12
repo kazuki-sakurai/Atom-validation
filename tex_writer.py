@@ -33,7 +33,7 @@ class tex_format:
 
 def rout(val, n):
     try:
-        return str(round(val, n))
+        return '$' + str(round(val, n)) + '$'
     except:
         return val
 
@@ -41,9 +41,12 @@ def make_table(ananame, vname, table_caption,
                texname_list, eff_exp, err_exp, eff_atom, err_atom, ratio_eff, ratio_eff_sig, 
                i_denom, Reff_exp, Rerr_exp, Reff_atom, Rerr_atom, ratio_R, ratio_R_sig):
     
+    err_exp[0] = ' '
+    err_atom[0] = ' '
     table_lists = []
-    pm = ' $\\pm$ '
     for i in range(len(texname_list)):
+        pm = ' '         
+        if i > 0: pm = ' $\\pm$ '
         line_list = []
         line_list.append(str(i))    # 1
         line_list.append(str(texname_list[i]))  # 2 
@@ -51,7 +54,6 @@ def make_table(ananame, vname, table_caption,
         line_list.append( rout(eff_atom[i], 2) + pm + rout(err_atom[i], 2) )  # 4
         line_list.append( rout(ratio_eff[i], 2) ) # 5
         line_list.append( rout(ratio_eff_sig[i], 2) ) # 6
-
         line_list.append(str(i_denom[i])) # 7
         line_list.append( rout(Reff_exp[i], 2) + pm + rout(Rerr_exp[i], 2) )  # 8
         line_list.append( rout(Reff_atom[i], 2) + pm + rout(Rerr_atom[i], 2) )  # 9
@@ -127,7 +129,7 @@ def table_writer(table_lists_orig, vname, table_caption):
     texlines.append('\\begin{center}')
     texlines.append('\\scalebox{0.7}[0.8]{ ')
 
-    texlines.append('\\begin{tabular}{c|c||c|c|>{\columncolor{yellow}}c|c||c|c|c|>{\columncolor{yellow}}c|c}')
+    texlines.append('\\begin{tabular}{c|l||c|c|>{\columncolor{yellow}}c|c||c|c|c|>{\columncolor{yellow}}c|c}')
     texlines.append('\\hline')
     texlines.append( headline[:-2] + dsla )
     texlines.append('\\hline')

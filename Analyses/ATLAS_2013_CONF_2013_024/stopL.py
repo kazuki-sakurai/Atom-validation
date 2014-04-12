@@ -40,9 +40,9 @@ if __name__ == '__main__':
                     ["MET > 130",                     270.1, 'MET $>$ 130'],
                     ["Jet multiplicity and pT",       92.2,  '$N_{\\rm jets}$ and $p_T$'],
                     ["MET_track > 30",                90.5,  '$\\rm MET_{track} > 30$'], 
-                    ["delPhi(MET, MET_track) < pi/3", 84.3,  '$\\Delta \\phi (\\rm MET, MET_{track}) < \\pi/3$'], 
-                    ["delPhi(jet, MET) > pi/5",       72.0,  '$\\Delta \\phi (\\rm jet, MET) < \\pi/5$'],                    
-                    ["Tau veto",                      61.9,  '$\\tau$ veto'],                    
+                    ["delPhi(MET, MET_track) < pi/3", 84.3,  '$\\Delta \\phi (\\rm MET, MET_{track}) < \\pi/3$'],
+                    ["delPhi(jet, MET) > pi/5",       72.0,  '$\\Delta \\phi (\\rm jet, MET) < \\pi/5$'],            
+                    ["Tau veto",                      61.9,  '$\\tau$ veto'],      
                     [">= 2-bjet",                     31.5,  '$\ge$ 2-bjets'],                    
                     ["mT(bjet, MET) > 175",           23.6,  '$m_T(\\rm bjet, MET) > 175$'],                    
                     ["80 < m^0_jjj < 270",            20.4,  '$80 < m^0_{jjj} < 270$'],                    
@@ -52,7 +52,8 @@ if __name__ == '__main__':
                     ["SR3: MET > 350",                6.6,   'SR1: $\\rm MET > 350$']
                     ]
 
-    texlines = cutflow_generation(ananame, vname, table_caption, initial_list, eff_dict, err_dict, Ntot_exp)    
+    NMC_first = Ntot_exp * initial_list[0][1] / initial_list[0][1]
+    texlines = cutflow_generation(ananame, vname, table_caption, initial_list, eff_dict, err_dict, NMC_first)    
 
     fout = open(vname + '.tex', 'w')
     tex = tex_format()

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  11 APR 2014 19:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  12 APR 2014 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -208,8 +208,11 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 )
 \everycr=\toks26
 \minrowclearance=\skip55
+) (./WWb.aux
+
+LaTeX Warning: Label `default' multiply defined.
+
 )
-No file WWb.aux.
 \openout1 = `WWb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -224,7 +227,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen121
@@ -308,7 +311,7 @@ Overfull \hbox (30.14209pt too wide) in paragraph at lines 52--55
  []
 
 
-Overfull \hbox (27.16054pt too wide) in paragraph at lines 76--79
+Overfull \hbox (31.27298pt too wide) in paragraph at lines 76--79
  [] 
  []
 
@@ -317,13 +320,13 @@ Overfull \hbox (27.16054pt too wide) in paragraph at lines 76--79
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./WWb.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3318 strings out of 493315
- 44860 string characters out of 6137904
- 122364 words of memory out of 5000000
+ 3320 strings out of 493315
+ 44876 string characters out of 6137904
+ 122426 words of memory out of 5000000
  6705 multiletter control sequences out of 15000+600000
  12073 words of font info for 48 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -339,7 +342,7 @@ texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on WWb.pdf (1 page, 104762 bytes).
+Output written on WWb.pdf (1 page, 104703 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream

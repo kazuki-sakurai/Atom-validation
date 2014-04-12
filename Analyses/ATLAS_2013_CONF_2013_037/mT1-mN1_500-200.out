@@ -1,0 +1,27 @@
+[?1034hSRtN2
+SRtN3
+[03] 4jets (80,60,40,25)
+[SRtN2] MET/sqrt(HT) > 13
+[not SRtN2] delPhi(J1,MET) > 0.8
+[SRtN2] mT > 140
+[01] Lepton (=1 base)
+[SRtN3] mT > 200
+[SRbC1-3] MET/sqrt(HT) > 7
+[06] MET/sqrt(HT) > 5
+[SRtN3] MET/sqrt(HT) > 11
+[SRbC1-3] MET > 150
+[SRbC1-3] MET/sqrt(HT) > 8
+SRbC3
+SRbC2
+SRbC1
+[05] MET > 100
+[SRtN2] MET > 200
+[07] delPhi(J2,MET) > 0.8
+[SRbC1-3] mT > 120
+[SRtN3] MET > 275
+[not SRtN2] delPhi(J1,MET) > 0.8 2
+[02] Lepton (=1 signal)
+[SRbC1-3] meff > 700
+[SRbC1-3] MET > 160
+[04] >=1b in 4 leading jets
+[SRbC1-3] meff > 550
