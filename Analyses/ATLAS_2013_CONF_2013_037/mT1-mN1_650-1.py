@@ -42,8 +42,6 @@ if __name__ == '__main__':
     #for key in eff_dict0: print key
     #exit()
 
-    Ntrigger = 215340.1 + 209318.5
-
     initial_list = [ 
                     ["[01] No cut",                  50004.0,           "[00] No cut"],    # 0                        
                     ["[02] Lepton (=1 signal)",      6229.3 + 5557.1,   "[02] Lepton ($=1$ signal)"],  # 1

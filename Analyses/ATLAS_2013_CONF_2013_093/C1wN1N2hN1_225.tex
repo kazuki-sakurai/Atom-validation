@@ -1,0 +1,69 @@
+
+        \documentclass[12pt]{article}
+
+        \setlength\topmargin{0mm}
+        \setlength\headheight{0mm}
+        \setlength\headsep{0mm} 
+        \setlength\oddsidemargin{0mm}
+        \setlength\evensidemargin{0mm}
+        \setlength\textwidth{165mm}
+        \setlength\textheight{220mm}    
+
+        \usepackage{fancyvrb}
+        \usepackage{amssymb}
+        \usepackage{amsmath}
+        \usepackage{enumerate}
+        \usepackage{slashed}
+        \usepackage{graphicx}
+        \usepackage{color}
+        \usepackage[tight]{subfigure}
+        \usepackage{float}
+        \usepackage{ulem}
+        \usepackage{url}
+        \usepackage{colortbl}
+        
+        \begin{document}
+    
+\subsection*{$(m_{\tilde \chi_2^0}, m_{\tilde \chi_1^0}) = (225, 0)$ (ATLAS\_CONF\_2013\_091)} 
+
+
+        \begin{itemize}
+        \item  Process: $\tilde \chi_1^\pm \tilde \chi_2^0 \to (W^\pm \tilde \chi_1^0)(Z \tilde \chi_1^0)$.
+        \item  Mass: $m_{\tilde \chi_1^\pm} = m_{\tilde \chi_2^0} = 225$~GeV, $m_{\tilde \chi_1^0} = 0$~GeV.
+        \item  The number of events: $5 \cdot 10^4$.
+        \item  Event Generator: {\tt Herwig++ 2.5.2}.    
+        \end{itemize}    
+    
+\renewcommand{\arraystretch}{1.3}
+\begin{table}[h!]
+\begin{center}
+\scalebox{0.65}[0.75]{ 
+\begin{tabular}{c|l||c|c|>{\columncolor{yellow}}c|c||c|c|c|>{\columncolor{yellow}}c|c}
+\hline
+\# & cut name & $\epsilon_{\rm Exp}$ & $\epsilon_{\rm Atom}$ & $\frac{\rm Atom}{\rm Exp}$ & $\frac{({\rm Exp} - {\rm Atom})}{\rm Error}$ & $\#/?$ & $R_{\rm Exp}$ & $R_{\rm Atom}$ & $\frac{\rm Atom}{\rm Exp}$ & $\frac{({\rm Exp} - {\rm Atom})}{\rm Error}$ \\
+\hline
+0 & MET $>$ 50 & $ 100.0 $   & $ 100.0 $   &  &  &  &   &   &  &  \\
+1 & $>= 2$ central jets & $ 76.28 $ $\pm$ $ 0.39 $ & $ 71.48 $ $\pm$ $ 0.93 $ & $ 0.94 $ & $ -4.77 $ & 0 & $ 0.76 $ $\pm$ $ 0.0 $ & $ 0.71 $ $\pm$ $ 0.01 $ & $ 0.94 $ & $ -4.77 $ \\
+2 & 2 leading jets central & $ 73.12 $ $\pm$ $ 0.38 $ & $ 68.63 $ $\pm$ $ 0.91 $ & $ 0.94 $ & $ -4.54 $ & 1 & $ 0.96 $ $\pm$ $ 0.01 $ & $ 0.96 $ $\pm$ $ 0.01 $ & $ 1.0 $ & $ 0.11 $ \\
+3 & 4th leading jet veto ($p_T > 25$) & $ 61.53 $ $\pm$ $ 0.35 $ & $ 56.18 $ $\pm$ $ 0.83 $ & $ 0.91 $ & $ -5.91 $ & 2 & $ 0.84 $ $\pm$ $ 0.0 $ & $ 0.82 $ $\pm$ $ 0.01 $ & $ 0.97 $ & $ -1.75 $ \\
+4 & baseline lepton veto & $ 60.51 $ $\pm$ $ 0.35 $ & $ 51.9 $ $\pm$ $ 0.8 $ & $ 0.86 $ & $ -9.83 $ & 3 & $ 0.98 $ $\pm$ $ 0.01 $ & $ 0.92 $ $\pm$ $ 0.01 $ & $ 0.94 $ & $ -3.88 $ \\
+5 & $m_{jj} > 50$ & $ 57.56 $ $\pm$ $ 0.34 $ & $ 48.34 $ $\pm$ $ 0.78 $ & $ 0.84 $ & $ -10.86 $ & 4 & $ 0.95 $ $\pm$ $ 0.01 $ & $ 0.93 $ $\pm$ $ 0.01 $ & $ 0.98 $ & $ -1.24 $ \\
+6 & $m_T > 40$ & $ 50.87 $ $\pm$ $ 0.32 $ & $ 41.76 $ $\pm$ $ 0.73 $ & $ 0.82 $ & $ -11.48 $ & 5 & $ 0.88 $ $\pm$ $ 0.01 $ & $ 0.86 $ $\pm$ $ 0.02 $ & $ 0.98 $ & $ -1.24 $ \\
+7 & $m_{CT} > 160$ & $ 8.74 $ $\pm$ $ 0.13 $ & $ 6.66 $ $\pm$ $ 0.3 $ & $ 0.76 $ & $ -6.36 $ & 6 & $ 0.17 $ $\pm$ $ 0.0 $ & $ 0.16 $ $\pm$ $ 0.01 $ & $ 0.93 $ & $ -1.6 $ \\
+8 & exactly 2 leading bjets & $ 7.57 $ $\pm$ $ 0.12 $ & $ 5.99 $ $\pm$ $ 0.28 $ & $ 0.79 $ & $ -5.13 $ & 7 & $ 0.87 $ $\pm$ $ 0.01 $ & $ 0.9 $ $\pm$ $ 0.04 $ & $ 1.04 $ & $ 0.72 $ \\
+9 & exactly 2 leading bjets & $ 2.32 $ $\pm$ $ 0.07 $ & $ 1.85 $ $\pm$ $ 0.16 $ & $ 0.8 $ & $ -2.75 $ & 8 & $ 0.31 $ $\pm$ $ 0.01 $ & $ 0.31 $ $\pm$ $ 0.03 $ & $ 1.01 $ & $ 0.08 $ \\
+10 & SRA: $100 < m_T < 130$ & $ 0.42 $ $\pm$ $ 0.03 $ & $ 0.31 $ $\pm$ $ 0.06 $ & $ 0.73 $ & $ -1.61 $ & 9 & $ 0.18 $ $\pm$ $ 0.01 $ & $ 0.17 $ $\pm$ $ 0.03 $ & $ 0.92 $ & $ -0.41 $ \\
+11 & SRB: $m_T > 130$ & $ 0.95 $ $\pm$ $ 0.04 $ & $ 0.67 $ $\pm$ $ 0.1 $ & $ 0.71 $ & $ -2.59 $ & 10 & $ 2.23 $ $\pm$ $ 0.1 $ & $ 2.17 $ $\pm$ $ 0.31 $ & $ 0.98 $ & $ -0.17 $ \\
+\hline
+\end{tabular}
+}
+\caption{\small 
+        The cut-flow table for $(m_{\tilde \chi_2^0}, m_{\tilde \chi_1^0}) = (225, 0)$.
+    }
+\label{tab:cflow_C1wN1N2hN1_225}
+\end{center}
+\label{default}
+\end{table}
+        
+        \end{document}
+    
