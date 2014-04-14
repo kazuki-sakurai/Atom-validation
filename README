@@ -1,0 +1,23 @@
+
+1) Set up the paths to nixpkgs, “nixpkgs_path”, and to Atom, “atom_path”, in setting.sh.  In setting.sh, the target cut-flow names (called vname) are listed.  If you want to skip some of the cut-flows, simply comment-out the corresponding vnames.
+ 
+2) The main code can be run by:
+
+./validation.sh  [analysis 1] [analysis 2], …
+
+or
+
+./validation.sh  analyses_list
+
+Before running Atom and comparing efficiencies between experiments and Atom, the program automatically downloads necessary hepmc files by scp command.  In this process, password for CERN server is asked.  The hepmc files will be saved in a separate directory, ../Validation-events, which will be automatically created.
+
+3) After running the main code, the summary of the cut-flow tables (tex-format PDF) can be generated in tex directory by:
+
+./write_table.sh   [analysis 1] [analysis 2], …
+
+or
+
+./write_table.sh  analyses_list
+
+You may need to modify write_table.sh and change "open" command to open PDF if you are not using Mac.
+
