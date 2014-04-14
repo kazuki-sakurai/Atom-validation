@@ -20,7 +20,7 @@ if __name__ == '__main__':
         \\begin{itemize}
         \\item  Process: $\\tilde \\mu^+ \\tilde \\mu^-: \\tilde \\mu^\\pm \\to \\mu^\\pm \\tilde \\chi_1^0$.
         \\item  Mass: $m_{\\tilde \\mu} = 191$~GeV, $m_{\\tilde \\chi_1^0} = 90$~GeV.
-        \\item  The number of events: $2 \\cdot 10^3$.
+        \\item  The number of events: $10^4$.
         \\item  Event Generator: {\\tt Herwig++ 2.5.2}.    
         \\end{itemize}    
     '''
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     tex = tex_format()
     fout.write(tex.begin_document)
     fout.write('\n')
-    fout.write('\\subsection*{' + table_name + '} \n')
+    fout.write('\\subsection{' + table_name + '} \n')
     fout.write('\n')    
     fout.write(description)    
     fout.write('\n')        

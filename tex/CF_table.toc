@@ -1,0 +1,58 @@
+\contentsline {section}{\numberline {1}ATLAS\_2013\_CONF\_2013\_024}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}$\mathaccentV {tilde}07Et_L \mathaccentV {tilde}07Et_L^* \to t \mathaccentV {tilde}07E\chi _1^0 \mathaccentV {bar}016t \mathaccentV {tilde}07E\chi _1^0$ (ATLAS\_CONF\_2013\_024)}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}$\mathaccentV {tilde}07Et_R \mathaccentV {tilde}07Et_R^* \to t \mathaccentV {tilde}07E\chi _1^0 \mathaccentV {bar}016t \mathaccentV {tilde}07E\chi _1^0$ (ATLAS\_CONF\_2013\_024)}{4}{subsection.1.2}
+\contentsline {section}{\numberline {2}ATLAS\_2013\_CONF\_2013\_035}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}SR noZa: (ATLAS\_CONF\_2013\_035)}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}SR noZb: (ATLAS\_CONF\_2013\_035)}{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}SR noZc: (ATLAS\_CONF\_2013\_035)}{8}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}SR Za: (ATLAS\_CONF\_2013\_035)}{9}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}SR Zb: (ATLAS\_CONF\_2013\_035)}{10}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}SR Zc: (ATLAS\_CONF\_2013\_035)}{11}{subsection.2.6}
+\contentsline {section}{\numberline {3}ATLAS\_2013\_CONF\_2013\_037}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}$\mathaccentV {tilde}07Et_1(500) \to t \mathaccentV {tilde}07E\chi _1^0(200)$ (ATLAS\_CONF\_2013\_037)}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}$\mathaccentV {tilde}07Et_1(650) \to t \mathaccentV {tilde}07E\chi _1^0(1)$ (ATLAS\_CONF\_2013\_037)}{14}{subsection.3.2}
+\contentsline {section}{\numberline {4}ATLAS\_2013\_CONF\_2013\_047}{16}{section.4}
+\contentsline {subsection}{\numberline {4.1}$\mathaccentV {tilde}07Eq \mathaccentV {tilde}07Eq$ direct (450, 400): (ATLAS\_CONF\_2013\_047)}{16}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}$\mathaccentV {tilde}07Eq \mathaccentV {tilde}07Eq$ direct (850, 100): (ATLAS\_CONF\_2013\_047)}{17}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}$\mathaccentV {tilde}07Eq \mathaccentV {tilde}07Eq$ direct (662, 287): (ATLAS\_CONF\_2013\_047)}{18}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}$\mathaccentV {tilde}07Eq \mathaccentV {tilde}07Eq$ direct (1425, 400): (ATLAS\_CONF\_2013\_047)}{19}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}$\mathaccentV {tilde}07Eq \mathaccentV {tilde}07Eq$ direct (1612, 37): (ATLAS\_CONF\_2013\_047)}{20}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}$\mathaccentV {tilde}07Eg \mathaccentV {tilde}07Eg$ direct (1162, 337): (ATLAS\_CONF\_2013\_047)}{21}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}$\mathaccentV {tilde}07Eg \mathaccentV {tilde}07Eg$ one step (1065, 785, 505): (ATLAS\_CONF\_2013\_047)}{22}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}$\mathaccentV {tilde}07Eg \mathaccentV {tilde}07Eg$ one step (1265, 865, 465): (ATLAS\_CONF\_2013\_047)}{23}{subsection.4.8}
+\contentsline {section}{\numberline {5}ATLAS\_2013\_CONF\_2013\_048}{25}{section.5}
+\contentsline {subsection}{\numberline {5.1}$\mathaccentV {tilde}07Et_1(400) \to b \mathaccentV {tilde}07E\chi _1^+(250) \to W^+ \mathaccentV {tilde}07E\chi _1^0(1)$ (ATLAS\_CONF\_2013\_048)}{25}{subsection.5.1}
+\contentsline {section}{\numberline {6}ATLAS\_2013\_CONF\_2013\_049}{27}{section.6}
+\contentsline {subsection}{\numberline {6.1}$\mathaccentV {tilde}07Ee^\pm (191) \to e^\pm \mathaccentV {tilde}07E\chi _1^0(90)$ (ATLAS\_CONF\_2013\_049)}{27}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}$\mathaccentV {tilde}07E\mu ^\pm (191) \to \mu ^\pm \mathaccentV {tilde}07E\chi _1^0(90)$ (ATLAS\_CONF\_2013\_049)}{28}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}$\mathaccentV {tilde}07Ee^\pm (250) \to e^\pm \mathaccentV {tilde}07E\chi _1^0(10)$ (ATLAS\_CONF\_2013\_049)}{29}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}$\mathaccentV {tilde}07E\mu ^\pm (250) \to \mu ^\pm \mathaccentV {tilde}07E\chi _1^0(10)$ (ATLAS\_CONF\_2013\_049)}{30}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}$\mathaccentV {tilde}07E\chi _1^\pm (350) \to (\ell \mathaccentV {tilde}07E\nu (175) \nobreakspace {}{\rm or}\nobreakspace {} \nu \mathaccentV {tilde}07E\ell (175)) \to \nu \ell \mathaccentV {tilde}07E\chi _1^0(0)$ (ATLAS\_CONF\_2013\_049)}{31}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}$\mathaccentV {tilde}07E\chi _1^\pm (425) \to (\ell \mathaccentV {tilde}07E\nu (250) \nobreakspace {}{\rm or}\nobreakspace {} \nu \mathaccentV {tilde}07E\ell (75)) \to \nu \ell \mathaccentV {tilde}07E\chi _1^0(0)$ (ATLAS\_CONF\_2013\_049)}{32}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}$\mathaccentV {tilde}07E\chi _1^\pm (100) \to W^\pm \mathaccentV {tilde}07E\chi _1^0(0)$ (ATLAS\_CONF\_2013\_049)}{33}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}$\mathaccentV {tilde}07E\chi _1^\pm (140) \to W^\pm \mathaccentV {tilde}07E\chi _1^0(20)$ (ATLAS\_CONF\_2013\_049)}{34}{subsection.6.8}
+\contentsline {subsection}{\numberline {6.9}$\mathaccentV {tilde}07E\chi _1^\pm (200) \to W^\pm \mathaccentV {tilde}07E\chi _1^0(0)$ (ATLAS\_CONF\_2013\_049)}{35}{subsection.6.9}
+\contentsline {section}{\numberline {7}ATLAS\_2013\_CONF\_2013\_061}{37}{section.7}
+\contentsline {subsection}{\numberline {7.1}0-lepton 4-jet channel, Gbb model (ATLAS\_CONF\_2013\_061)}{37}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}0-lepton 7-jet channel, Gtt model (ATLAS\_CONF\_2013\_061)}{38}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}1-lepton 6-jet channel, Gtt model (ATLAS\_CONF\_2013\_061)}{39}{subsection.7.3}
+\contentsline {section}{\numberline {8}ATLAS\_2013\_CONF\_2013\_093}{41}{section.8}
+\contentsline {subsection}{\numberline {8.1}$(m_{\mathaccentV {tilde}07E\chi _2^0}, m_{\mathaccentV {tilde}07E\chi _1^0}) = (130, 0)$ (ATLAS\_CONF\_2013\_091)}{41}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}$(m_{\mathaccentV {tilde}07E\chi _2^0}, m_{\mathaccentV {tilde}07E\chi _1^0}) = (225, 0)$ (ATLAS\_CONF\_2013\_091)}{42}{subsection.8.2}
+\contentsline {section}{\numberline {9}ATLAS\_2014\_I1286444}{44}{section.9}
+\contentsline {subsection}{\numberline {9.1}SR H160: $\mathaccentV {tilde}07Et_1(300) \to b \mathaccentV {tilde}07E\chi _1^+(150) \to W^+ \mathaccentV {tilde}07E\chi _1^0(50)$ (ATLAS\_2014\_I1286444 (1403.4853))}{44}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}SR H160: $\mathaccentV {tilde}07Et_1(250) \to b \mathaccentV {tilde}07E\chi _1^+(106) \to W^+ \mathaccentV {tilde}07E\chi _1^0(60)$ (ATLAS\_2014\_I1286444 (1403.4853))}{45}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}SR L: $\mathaccentV {tilde}07Et_1(300) \to b \mathaccentV {tilde}07E\chi _1^+(150) \to W^+ \mathaccentV {tilde}07E\chi _1^0(1)$ (ATLAS\_2014\_I1286444 (1403.4853))}{46}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}SR L: $\mathaccentV {tilde}07Et_1(400) \to b \mathaccentV {tilde}07E\chi _1^+(390) \to W^+ \mathaccentV {tilde}07E\chi _1^0(195)$ (ATLAS\_2014\_I1286444 (1403.4853))}{47}{subsection.9.4}
+\contentsline {section}{\numberline {10}ATLAS\_2014\_I1286761}{49}{section.10}
+\contentsline {subsection}{\numberline {10.1}$\mathaccentV {tilde}07Ee^\pm (191) \to e^\pm \mathaccentV {tilde}07E\chi _1^0(90)$ (ATLAS\_2014\_I1286761 (1403.5294))}{49}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}$\mathaccentV {tilde}07E\mu ^\pm (191) \to \mu ^\pm \mathaccentV {tilde}07E\chi _1^0(90)$ (ATLAS\_2014\_I1286761 (1403.5294))}{50}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}$\mathaccentV {tilde}07Ee^\pm (250) \to e^\pm \mathaccentV {tilde}07E\chi _1^0(10)$ (ATLAS\_2014\_I1286761 (1403.5294))}{51}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}$\mathaccentV {tilde}07E\mu ^\pm (250) \to \mu ^\pm \mathaccentV {tilde}07E\chi _1^0(10)$ (ATLAS\_2014\_I1286761 (1403.5294))}{52}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}$\mathaccentV {tilde}07E\chi _1^\pm (350) \to (\ell \mathaccentV {tilde}07E\nu (175) \nobreakspace {}{\rm or}\nobreakspace {} \nu \mathaccentV {tilde}07E\ell (175)) \to \nu \ell \mathaccentV {tilde}07E\chi _1^0(0)$ (ATLAS\_2014\_I1286761 (1403.5294))}{53}{subsection.10.5}
+\contentsline {subsection}{\numberline {10.6}$\mathaccentV {tilde}07E\chi _1^\pm (425) \to (\ell \mathaccentV {tilde}07E\nu (250) \nobreakspace {}{\rm or}\nobreakspace {} \nu \mathaccentV {tilde}07E\ell (250)) \to \nu \ell \mathaccentV {tilde}07E\chi _1^0(75)$ (ATLAS\_2014\_I1286761 (1403.5294))}{54}{subsection.10.6}
+\contentsline {subsection}{\numberline {10.7}$\mathaccentV {tilde}07E\chi _1^\pm (100) \to W^\pm \mathaccentV {tilde}07E\chi _1^0(0)$ (ATLAS\_2014\_I1286761 (1403.5294))}{55}{subsection.10.7}
+\contentsline {subsection}{\numberline {10.8}$\mathaccentV {tilde}07E\chi _1^\pm (140) \to W^\pm \mathaccentV {tilde}07E\chi _1^0(20)$ (ATLAS\_2014\_I1286761 (1403.5294))}{56}{subsection.10.8}
+\contentsline {subsection}{\numberline {10.9}$\mathaccentV {tilde}07E\chi _1^\pm (200) \to W^\pm \mathaccentV {tilde}07E\chi _1^0(0)$ (ATLAS\_2014\_I1286761 (1403.5294))}{57}{subsection.10.9}
+\contentsline {subsection}{\numberline {10.10}Zjets SR: S1 (ATLAS\_2014\_I1286761 (1403.5294))}{58}{subsection.10.10}
+\contentsline {subsection}{\numberline {10.11}Zjets SR: S2 (ATLAS\_2014\_I1286761 (1403.5294))}{59}{subsection.10.11}

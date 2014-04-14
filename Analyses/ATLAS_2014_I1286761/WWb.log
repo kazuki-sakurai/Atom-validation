@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  12 APR 2014 12:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  14 APR 2014 03:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -305,32 +305,22 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+ [1
 
-Overfull \hbox (30.14209pt too wide) in paragraph at lines 52--55
- [] 
- []
-
-
-Overfull \hbox (31.27298pt too wide) in paragraph at lines 76--79
- [] 
- []
-
-[1
-
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./WWb.aux)
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./WWb.
+aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3320 strings out of 493315
- 44876 string characters out of 6137904
- 122426 words of memory out of 5000000
- 6705 multiletter control sequences out of 15000+600000
+ 3321 strings out of 493315
+ 44882 string characters out of 6137904
+ 122429 words of memory out of 5000000
+ 6706 multiletter control sequences out of 15000+600000
  12073 words of font info for 48 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,13n,26p,618b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,26p,618b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
@@ -342,7 +332,7 @@ texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on WWb.pdf (1 page, 104703 bytes).
+Output written on WWb.pdf (1 page, 104920 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream

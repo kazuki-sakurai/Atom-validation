@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     vname = 'GQdirect_1425-525'
 
-    table_name = '$\\tilde q \\tilde q$ direct (1425, 400): (ATLAS\\_CONF\\_2013\\_047)'
+    table_name = '$\\tilde q \\tilde g$ direct (1425, 400): (ATLAS\\_CONF\\_2013\\_047)'
     description = '''
         \\begin{itemize}
         \\item  Process: $pp \\to \\tilde q \\tilde g \\to (q \\chi_1^0)(q q \\chi_1^0)$.
@@ -47,7 +47,7 @@ if __name__ == '__main__':
                     ["base: MET > 160",            93.3,   "base: MET $>$ 160"],
                     ["base: pTj1 > 130",           93.3,   "base: $p_T(j_1) > 130$"], 
                     ["base: pTj2 > 60",            92.4,   "base: $p_T(j_2) > 60$"],    
-                    ["pTj3 > 60",                  68.5,   "pTj3 > 60"],              
+                    ["pTj3 > 60",                  68.5,   "$p_T(j_3) > 60$"],              
                     ["B base: dphi_min_23 > 0.4",  60.4,   "B base: $\\Delta \\phi(j_i, {\\rm MET}) > 0.4$"],                    
                     ["BT: MET/meff_3j > 0.4",      44.8,   "BT: ${\\rm MET}/m_{\\rm eff}(3j) > 0.4$"],
                     ["BT: meff_inc > 1800",        27.5,   "BT: $m_{\\rm eff}({\\rm inc}) > 1800$"]
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     tex = tex_format()
     fout.write(tex.begin_document)
     fout.write('\n')
-    fout.write('\\subsection*{' + table_name + '} \n')
+    fout.write('\\subsection{' + table_name + '} \n')
     fout.write('\n')    
     fout.write(description)    
     fout.write('\n')        

@@ -16,10 +16,10 @@ get_names ()
     if [[ $ana == "ATLAS_2014_I1286761" ]]; then
 
         vname_list+=("EN1_191")
-        fname_list+=("EeN1_191-90_2E3.hepmc")
+        fname_list+=("EeN1_191-90_1E4.hepmc")
 
         vname_list+=("MN1_191")
-        fname_list+=("MmN1_191-90_2E3.hepmc")
+        fname_list+=("MmN1_191-90_1E4.hepmc")
 
         vname_list+=("EN1_250")
         fname_list+=("EeN1_250-10_2E3.hepmc")
@@ -28,7 +28,7 @@ get_names ()
         fname_list+=("MmN1_250-10_2E3.hepmc")
 
         vname_list+=("C1LN1_350")
-        fname_list+=("C1lLlN1_350-175-0_1E4.hepmc")
+        fname_list+=("C1lLlN1_350-175-0_2E4.hepmc")
 
         vname_list+=("C1LN1_425")
         fname_list+=("C1lLlN1_425-250-75_1E4.hepmc")
@@ -43,10 +43,10 @@ get_names ()
         fname_list+=("C1wN1_200-0_5E4.hepmc")
 
         vname_list+=("Zjets_250")
-        fname_list+=("C1wN1-N2zN1_250-0_5E4.hepmc")
+        fname_list+=("C1wN1-N2zN1_250-0_2E4.hepmc")
 
         vname_list+=("Zjets_350")
-        fname_list+=("C1wN1-N2zN1_350-50_5E4.hepmc")
+        fname_list+=("C1wN1-N2zN1_350-50_2E4.hepmc")
 
     fi
 
@@ -159,7 +159,7 @@ get_names ()
         vname_list+=("EN1_191")
         fname_list+=("EeN1_191-90_2E3.hepmc")
 
-        name_list+=("MN1_191")
+        vname_list+=("MN1_191")
         fname_list+=("MmN1_191-90_2E3.hepmc")
 
         vname_list+=("EN1_250")
@@ -169,10 +169,10 @@ get_names ()
         fname_list+=("MmN1_250-10_2E3.hepmc")
 
         vname_list+=("C1LN1_350")
-        fname_list+=("C1lLlN1_350-175-0_1E4.hepmc")
+        fname_list+=("C1lLlN1_350-175-0_2E4.hepmc")
 
         vname_list+=("C1LN1_425")
-        fname_list+=("C1lLlN1_425-250-75_1E4.hepmc")
+        fname_list+=("C1lLlN1_425-250-75_2E4.hepmc")
 
         vname_list+=("WWa")
         fname_list+=("C1wN1_100-0_5E4.hepmc")

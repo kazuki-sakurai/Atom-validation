@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  12 APR 2014 18:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  14 APR 2014 03:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -316,11 +316,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 3318 strings out of 493315
- 44840 string characters out of 6137904
- 112364 words of memory out of 5000000
- 6703 multiletter control sequences out of 15000+600000
- 11766 words of font info for 47 fonts, out of 8000000 for 9000
+ 3320 strings out of 493315
+ 44861 string characters out of 6137904
+ 112379 words of memory out of 5000000
+ 6705 multiletter control sequences out of 15000+600000
+ 12073 words of font info for 48 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,13n,26p,606b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -334,7 +334,7 @@ texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on WWb.pdf (1 page, 101201 bytes).
+Output written on WWb.pdf (1 page, 101574 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream

@@ -9,7 +9,6 @@ from math import *
 sys.path.append('../..')
 from functions import *
 
-
 if __name__ == '__main__':
 
     vname = 'Zjets_250'
@@ -19,9 +18,9 @@ if __name__ == '__main__':
 
     description = '''
         \\begin{itemize}
-        \\item  Process: $\\tilde \\chi_1^\\pm \\tilde \\chi_2^0 \\to (W^\\pm \\tilde \\chi_1^0) (Z \\tilde \\chi_1^0)$.
+        \\item  Process: $\\tilde \\chi_1^\\pm \\tilde \\chi_2^0 \\to (W^\\pm \\tilde \\chi_1^0) (Z \\tilde \\chi_1^0)$: forcing $Z \\to \\ell^+ \\ell^-$.
         \\item  Mass: $m_{\\tilde \\chi_1^\\pm} = m_{\\tilde \\chi_2^0} = 250$~GeV, $m_{\\tilde \\chi_1^0} = 0$~GeV.
-        \\item  The number of events: $5 \\cdot 10^4$.
+        \\item  The number of events: $2 \\cdot 10^4$.
         \\item  Event Generator: {\\tt Herwig++ 2.5.2}.    
         \\end{itemize}    
     '''
@@ -63,7 +62,7 @@ if __name__ == '__main__':
     tex = tex_format()
     fout.write(tex.begin_document)
     fout.write('\n')
-    fout.write('\\subsection*{' + table_name + '} \n')
+    fout.write('\\subsection{' + table_name + '} \n')
     fout.write('\n')    
     fout.write(description)    
     fout.write('\n')        

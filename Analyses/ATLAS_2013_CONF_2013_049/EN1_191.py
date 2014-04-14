@@ -34,6 +34,9 @@ if __name__ == '__main__':
 
     ananame, eff_dict0, err_dict0, pid = GetEfficiencies(inputfile)
 
+    #for key in eff_dict0: print key
+    #exit()
+
     Ntot_exp = 5000.
     per = 100.
     
@@ -59,10 +62,12 @@ if __name__ == '__main__':
     tex = tex_format()
     fout.write(tex.begin_document)
     fout.write('\n')
-    fout.write('\\subsection*{' + table_name + '} \n')
+    fout.write('\\subsection{' + table_name + '} \n')
     fout.write('\n')    
     fout.write(description)    
     fout.write('\n')        
     for t in table_lines: fout.write(t + '\n')
     fout.write('\n')        
     fout.write(tex.end_document)
+    fout.close()
+

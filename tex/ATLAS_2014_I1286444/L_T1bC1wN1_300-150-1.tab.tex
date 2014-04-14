@@ -1,0 +1,65 @@
+    
+\subsection{SR L: $\tilde t_1(300) \to b \tilde \chi_1^+(150) \to W^+ \tilde \chi_1^0(1)$ (ATLAS\_2014\_I1286444 (1403.4853))} 
+
+
+        \begin{itemize}
+        \item  Process: $pp \to \tilde t_1 \tilde t_1^*: \tilde t_1 \to b \tilde \chi_1^+ \to W^+ \tilde \chi_1^0$.
+        \item  Mass: $m_{\tilde t_1} = 300$~GeV, $m_{\tilde \chi_1^\pm} = 150$~GeV, $m_{\tilde \chi_1^0} = 1$~GeV.
+        \item  The number of events: $10^4$.
+        \item  Event Generator: {\tt Herwig++ 2.5.2}.    
+        \end{itemize}    
+    
+\renewcommand{\arraystretch}{1.3}
+\begin{table}[h!]
+\begin{center}
+\scalebox{0.65}[0.75]{ 
+\begin{tabular}{c|l||c|c|>{\columncolor{yellow}}c|c||c|c|c|>{\columncolor{yellow}}c|c}
+\hline
+\# & cut name & $\epsilon_{\rm Exp}$ & $\epsilon_{\rm Atom}$ & $\frac{\rm Atom}{\rm Exp}$ & $\frac{({\rm Exp} - {\rm Atom})}{\rm Error}$ & $\#/?$ & $R_{\rm Exp}$ & $R_{\rm Atom}$ & $\frac{\rm Atom}{\rm Exp}$ & $\frac{({\rm Exp} - {\rm Atom})}{\rm Error}$ \\
+\hline
+0 & $p_T(\ell_1) > 25$: SF & $ 100.0 $   & $ 100.0 $   &  &  &  &   &   &  &  \\
+1 & $Z$ veto: SF & $ 70.97 $ $\pm$ $ 0.71 $ & $ 70.98 $ $\pm$ $ 2.12 $ & $ 1.0 $ & $ 0.0 $ & 0 & $ 0.71 $ $\pm$ $ 0.01 $ & $ 0.71 $ $\pm$ $ 0.02 $ & $ 1.0 $ & $ 0.0 $ \\
+2 & $\Delta \phi_j > 1.0$: SF & $ 38.07 $ $\pm$ $ 0.52 $ & $ 38.37 $ $\pm$ $ 1.6 $ & $ 1.01 $ & $ 0.18 $ & 1 & $ 0.54 $ $\pm$ $ 0.01 $ & $ 0.54 $ $\pm$ $ 0.02 $ & $ 1.01 $ & $ 0.17 $ \\
+3 & $\Delta \phi_b < 1.5$: SF & $ 36.96 $ $\pm$ $ 0.51 $ & $ 36.96 $ $\pm$ $ 1.57 $ & $ 1.0 $ & $ -0.0 $ & 2 & $ 0.97 $ $\pm$ $ 0.01 $ & $ 0.96 $ $\pm$ $ 0.04 $ & $ 0.99 $ & $ -0.18 $ \\
+4 & $m_{T2} > 90$: SF & $ 2.38 $ $\pm$ $ 0.13 $ & $ 2.53 $ $\pm$ $ 0.42 $ & $ 1.06 $ & $ 0.35 $ & 3 & $ 0.06 $ $\pm$ $ 0.0 $ & $ 0.07 $ $\pm$ $ 0.01 $ & $ 1.06 $ & $ 0.35 $ \\
+5 & \cellcolor{cyan} $m_{T2} > 120$: SF & $ 0.36 $ $\pm$ $ 0.05 $ & $ 0.21 $ $\pm$ $ 0.12 $ & \color{blue}\bf $ 0.59 $ & $ -1.11 $ & 4 & $ 0.15 $ $\pm$ $ 0.02 $ & $ 0.08 $ $\pm$ $ 0.05 $ & \color{blue}\bf $ 0.56 $ & $ -1.27 $ \\
+6 & $m_{T2} > 100, p_T(j) > 100, 50$: SF & $ 1.02 $ $\pm$ $ 0.08 $ & $ 0.63 $ $\pm$ $ 0.21 $ & \color{blue}\bf $ 0.62 $ & $ -1.69 $ & 5 & $ 2.85 $ $\pm$ $ 0.24 $ & $ 3.0 $ $\pm$ $ 1.0 $ & $ 1.05 $ & $ 0.15 $ \\
+7 & $m_{T2} > 110, p_T(j) > 20, 20$: SF & $ 0.82 $ $\pm$ $ 0.08 $ & $ 0.42 $ $\pm$ $ 0.17 $ & \color{blue}\bf $ 0.52 $ & $ -2.1 $ & 6 & $ 0.8 $ $\pm$ $ 0.07 $ & $ 0.67 $ $\pm$ $ 0.27 $ & $ 0.83 $ & $ -0.48 $ \\
+\hline
+\end{tabular}
+}
+\caption{\small 
+        The cut-flow table for the same flavour channel.
+    }
+\label{tab:cflow_L_T1bC1wN1_300-150-1_SF}
+\end{center}
+\label{default}
+\end{table}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{table}[h!]
+\begin{center}
+\scalebox{0.65}[0.75]{ 
+\begin{tabular}{c|l||c|c|>{\columncolor{yellow}}c|c||c|c|c|>{\columncolor{yellow}}c|c}
+\hline
+\# & cut name & $\epsilon_{\rm Exp}$ & $\epsilon_{\rm Atom}$ & $\frac{\rm Atom}{\rm Exp}$ & $\frac{({\rm Exp} - {\rm Atom})}{\rm Error}$ & $\#/?$ & $R_{\rm Exp}$ & $R_{\rm Atom}$ & $\frac{\rm Atom}{\rm Exp}$ & $\frac{({\rm Exp} - {\rm Atom})}{\rm Error}$ \\
+\hline
+0 & $p_T(\ell_1) > 25$: DF & $ 100.0 $   & $ 100.0 $   &  &  &  &   &   &  &  \\
+1 & $\Delta \phi_j > 1.0$: DF & $ 51.36 $ $\pm$ $ 0.61 $ & $ 56.2 $ $\pm$ $ 1.95 $ & $ 1.09 $ & $ 2.36 $ & 0 & $ 0.51 $ $\pm$ $ 0.01 $ & $ 0.56 $ $\pm$ $ 0.02 $ & $ 1.09 $ & $ 2.36 $ \\
+2 & $\Delta \phi_b < 1.5$: DF & $ 49.75 $ $\pm$ $ 0.6 $ & $ 54.37 $ $\pm$ $ 1.92 $ & $ 1.09 $ & $ 2.29 $ & 1 & $ 0.97 $ $\pm$ $ 0.01 $ & $ 0.97 $ $\pm$ $ 0.03 $ & $ 1.0 $ & $ -0.03 $ \\
+3 & $m_{T2} > 90$: DF & $ 3.01 $ $\pm$ $ 0.15 $ & $ 3.37 $ $\pm$ $ 0.5 $ & $ 1.12 $ & $ 0.7 $ & 2 & $ 0.06 $ $\pm$ $ 0.0 $ & $ 0.06 $ $\pm$ $ 0.01 $ & $ 1.03 $ & $ 0.16 $ \\
+4 & \cellcolor{cyan} $m_{T2} > 120$: DF & $ 0.37 $ $\pm$ $ 0.05 $ & $ 0.15 $ $\pm$ $ 0.1 $ & \color{blue}\bf $ 0.4 $ & $ -1.9 $ & 3 & $ 0.12 $ $\pm$ $ 0.02 $ & $ 0.04 $ $\pm$ $ 0.03 $ & \color{blue}\bf $ 0.36 $ & $ -2.23 $ \\
+5 & \cellcolor{cyan} $m_{T2} > 100, p_T(j) > 100, 50$: DF & $ 0.61 $ $\pm$ $ 0.07 $ & $ 1.03 $ $\pm$ $ 0.27 $ & \color{blue}\bf $ 1.7 $ & $ 1.49 $ & 4 & $ 1.65 $ $\pm$ $ 0.18 $ & $ 7.0 $ $\pm$ $ 1.87 $ & \color{blue}\bf $ 4.25 $ & $ 2.85 $ \\
+6 & \cellcolor{cyan} $m_{T2} > 110, p_T(j) > 20, 20$: DF & $ 0.64 $ $\pm$ $ 0.07 $ & $ 0.73 $ $\pm$ $ 0.23 $ & $ 1.14 $ & $ 0.37 $ & 5 & $ 1.06 $ $\pm$ $ 0.11 $ & $ 0.71 $ $\pm$ $ 0.23 $ & \color{blue}\bf $ 0.67 $ & $ -1.39 $ \\
+\hline
+\end{tabular}
+}
+\caption{\small 
+        The cut-flow table for the different flavour channel.
+    }
+\label{tab:cflow_L_T1bC1wN1_300-150-1_DF}
+\end{center}
+\label{default}
+\end{table}
+
+        

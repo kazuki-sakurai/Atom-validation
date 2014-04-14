@@ -65,7 +65,7 @@ for ana in ${alist[@]}; do
             if [[ $answer == 'y' ]]; then
                 cd $valdir/../Validation-events/$ana
                 linkhead='atom@lxplus.cern.ch:www/Validation-events'
-                scp $linkhead'/'$ana'/'$fname.gz ./temp.gz && mv temp.gz $fname.gz && gunzip $fname.gz
+                scp $linkhead'/'$ana'/'$fname.gz ./temp.gz && mv temp.gz $fname.gz && gunzip -f $fname.gz
                 cd $valdir
             else                
                 break
@@ -78,10 +78,12 @@ for ana in ${alist[@]}; do
         nix-shell $nixpkgs_path -A hepNixOverlay.dev.AtomDev --command $script
 
         cd $valdir/Analyses/$ana
+        rm $vname.tex
         ./$vname.py $vname.root | tee $vname.out
+        #pdflatex $vname.tex
         cd $valdir
 
     done    
 done
 
-
+#sh write_table.sh

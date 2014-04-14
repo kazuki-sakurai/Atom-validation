@@ -1,0 +1,45 @@
+    
+\subsection{$\tilde g \tilde g$ one step (1265, 865, 465): (ATLAS\_CONF\_2013\_047)} 
+
+
+        \begin{itemize}
+        \item  Process: $pp \to \tilde g \tilde g: \tilde g \to q q \chi_1^\pm \to W^\pm q q \tilde \chi_1^0$.
+        \item  Mass: $m_{\tilde q} = 1265$~GeV, $m_{\tilde \chi_1^\pm} = 865$~GeV, $m_{\tilde \chi_1^0} = 465$~GeV.
+        \item  The number of events: $2 \cdot 10^4$.
+        \item  Event Generator: {\tt MadGraph 5 and Pythia 6}.
+                The MLM merging is used with the shower-$k_T$ scheme implemented in MadGraph 5 and Pythia 6, where we take xqcut = qcut = $M_{\rm SUSY}/4$ with MSUSY being the mass of the heavier SUSY particles in the production.      
+        \end{itemize}    
+    
+\renewcommand{\arraystretch}{1.3}
+\begin{table}[h!]
+\begin{center}
+\scalebox{0.65}[0.75]{ 
+\begin{tabular}{c|l||c|c|>{\columncolor{yellow}}c|c||c|c|c|>{\columncolor{yellow}}c|c}
+\hline
+\# & cut name & $\epsilon_{\rm Exp}$ & $\epsilon_{\rm Atom}$ & $\frac{\rm Atom}{\rm Exp}$ & $\frac{({\rm Exp} - {\rm Atom})}{\rm Error}$ & $\#/?$ & $R_{\rm Exp}$ & $R_{\rm Atom}$ & $\frac{\rm Atom}{\rm Exp}$ & $\frac{({\rm Exp} - {\rm Atom})}{\rm Error}$ \\
+\hline
+0 & No cut & $ 100.0 $   & $ 100.0 $   &  &  &  &   &   &  &  \\
+1 & base: 0 lepton & $ 63.5 $ $\pm$ $ 0.56 $ & $ 64.49 $ $\pm$ $ 0.34 $ & $ 1.02 $ & $ 1.51 $ & 0 & $ 0.64 $ $\pm$ $ 0.01 $ & $ 0.64 $ $\pm$ $ 0.0 $ & $ 1.02 $ & $ 1.51 $ \\
+2 & base: MET $>$ 160 & $ 55.6 $ $\pm$ $ 0.53 $ & $ 56.18 $ $\pm$ $ 0.35 $ & $ 1.01 $ & $ 0.92 $ & 1 & $ 0.88 $ $\pm$ $ 0.01 $ & $ 0.87 $ $\pm$ $ 0.01 $ & $ 0.99 $ & $ -0.45 $ \\
+3 & base: $p_T(j_1) > 130$ & $ 55.6 $ $\pm$ $ 0.53 $ & $ 56.08 $ $\pm$ $ 0.35 $ & $ 1.01 $ & $ 0.76 $ & 2 & $ 1.0 $ $\pm$ $ 0.01 $ & $ 1.0 $ $\pm$ $ 0.01 $ & $ 1.0 $ & $ -0.16 $ \\
+4 & base: $p_T(j_2) > 60$ & $ 55.6 $ $\pm$ $ 0.53 $ & $ 56.07 $ $\pm$ $ 0.35 $ & $ 1.01 $ & $ 0.75 $ & 3 & $ 1.0 $ $\pm$ $ 0.01 $ & $ 1.0 $ $\pm$ $ 0.01 $ & $ 1.0 $ & $ -0.01 $ \\
+5 & $p_T(j_3) > 60$ & $ 55.4 $ $\pm$ $ 0.53 $ & $ 55.78 $ $\pm$ $ 0.35 $ & $ 1.01 $ & $ 0.61 $ & 4 & $ 1.0 $ $\pm$ $ 0.01 $ & $ 0.99 $ $\pm$ $ 0.01 $ & $ 1.0 $ & $ -0.14 $ \\
+6 & $p_T(j_4) > 60$ & $ 53.4 $ $\pm$ $ 0.52 $ & $ 53.82 $ $\pm$ $ 0.35 $ & $ 1.01 $ & $ 0.67 $ & 5 & $ 0.96 $ $\pm$ $ 0.01 $ & $ 0.96 $ $\pm$ $ 0.01 $ & $ 1.0 $ & $ 0.08 $ \\
+7 & $p_T(j_5) > 60$ & $ 46.3 $ $\pm$ $ 0.48 $ & $ 45.81 $ $\pm$ $ 0.35 $ & $ 0.99 $ & $ -0.81 $ & 6 & $ 0.87 $ $\pm$ $ 0.01 $ & $ 0.85 $ $\pm$ $ 0.01 $ & $ 0.98 $ & $ -1.42 $ \\
+8 & $p_T(j_6) > 60$ & $ 31.7 $ $\pm$ $ 0.4 $ & $ 30.33 $ $\pm$ $ 0.33 $ & $ 0.96 $ & $ -2.67 $ & 7 & $ 0.68 $ $\pm$ $ 0.01 $ & $ 0.66 $ $\pm$ $ 0.01 $ & $ 0.97 $ & $ -2.03 $ \\
+9 & E base: $\Delta \phi(j_i, {\rm MET}) > 0.4$ & $ 26.5 $ $\pm$ $ 0.36 $ & $ 25.54 $ $\pm$ $ 0.31 $ & $ 0.96 $ & $ -2.01 $ & 8 & $ 0.84 $ $\pm$ $ 0.01 $ & $ 0.84 $ $\pm$ $ 0.01 $ & $ 1.01 $ & $ 0.4 $ \\
+10 & E base: $\Delta \phi(j_i>40, {\rm MET}) > 0.2$ & $ 21.3 $ $\pm$ $ 0.33 $ & $ 20.82 $ $\pm$ $ 0.29 $ & $ 0.98 $ & $ -1.1 $ & 9 & $ 0.8 $ $\pm$ $ 0.01 $ & $ 0.82 $ $\pm$ $ 0.01 $ & $ 1.01 $ & $ 0.68 $ \\
+11 & ET: ${\rm MET}/m_{\rm eff}(6j) > 0.25$ & $ 12.0 $ $\pm$ $ 0.24 $ & $ 11.95 $ $\pm$ $ 0.23 $ & $ 1.0 $ & $ -0.16 $ & 10 & $ 0.56 $ $\pm$ $ 0.01 $ & $ 0.57 $ $\pm$ $ 0.01 $ & $ 1.02 $ & $ 0.65 $ \\
+12 & ET: $m_{\rm eff}({\rm inc}) > 1500$ & $ 7.9 $ $\pm$ $ 0.2 $ & $ 8.22 $ $\pm$ $ 0.19 $ & $ 1.04 $ & $ 1.15 $ & 11 & $ 0.66 $ $\pm$ $ 0.02 $ & $ 0.69 $ $\pm$ $ 0.02 $ & $ 1.05 $ & $ 1.28 $ \\
+\hline
+\end{tabular}
+}
+\caption{\small 
+        The cut-flow table for E tight signal region: $\tilde g \tilde g$ one step (1265, 865, 465).
+    }
+\label{tab:cflow_GG1step_1265}
+\end{center}
+\label{default}
+\end{table}
+
+        

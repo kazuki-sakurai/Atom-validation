@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  12 APR 2014 19:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  13 APR 2014 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -209,7 +209,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \everycr=\toks26
 \minrowclearance=\skip55
 )
-No file GttN1_1L6J.aux.
+(./GttN1_1L6J.aux)
 \openout1 = `GttN1_1L6J.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -224,6 +224,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
+
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
@@ -315,10 +316,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 3306 strings out of 493315
- 44741 string characters out of 6137904
- 141364 words of memory out of 5000000
- 6693 multiletter control sequences out of 15000+600000
+ 3309 strings out of 493315
+ 44777 string characters out of 6137904
+ 141379 words of memory out of 5000000
+ 6694 multiletter control sequences out of 15000+600000
  9465 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,13n,26p,635b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -333,7 +334,7 @@ l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on GttN1_1L6J.pdf (1 page, 110275 bytes).
+Output written on GttN1_1L6J.pdf (1 page, 110381 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream

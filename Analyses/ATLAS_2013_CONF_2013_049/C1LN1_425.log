@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  12 APR 2014 18:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  14 APR 2014 02:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -209,7 +209,14 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \everycr=\toks26
 \minrowclearance=\skip55
 )
-No file C1LN1_425.aux.
+(./C1LN1_425.aux
+
+LaTeX Warning: Label `default' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+)
 \openout1 = `C1LN1_425.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -224,7 +231,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen121
@@ -295,8 +302,14 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
+Overfull \hbox (13.29237pt too wide) in paragraph at lines 27--27
+[]$[]\OT1/cmr/m/n/14.4 (425) \OMS/cmsy/m/n/14.4 ! \OT1/cmr/m/n/14.4 (\OML/cmm/m
+/it/14.4 `[]\OT1/cmr/m/n/14.4 (250) [][] []\OML/cmm/m/it/14.4 ^^W[]\OT1/cmr/m/n
+/14.4 (75)) \OMS/cmsy/m/n/14.4 ! \OML/cmm/m/it/14.4 ^^W`[]\OT1/cmr/m/n/14.4 (0)
+$ \OT1/cmr/bx/n/14.4 (AT-LAS[]CONF[]2013[]049) 
+ []
 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -307,15 +320,15 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./C1LN
 1_425.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3324 strings out of 493315
- 45022 string characters out of 6137904
- 134364 words of memory out of 5000000
+ 3326 strings out of 493315
+ 45041 string characters out of 6137904
+ 134437 words of memory out of 5000000
  6711 multiletter control sequences out of 15000+600000
- 13321 words of font info for 53 fonts, out of 8000000 for 9000
+ 13014 words of font info for 52 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,13n,26p,617b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -330,7 +343,7 @@ exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
 ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
 e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on C1LN1_425.pdf (1 page, 112217 bytes).
+Output written on C1LN1_425.pdf (1 page, 112363 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream

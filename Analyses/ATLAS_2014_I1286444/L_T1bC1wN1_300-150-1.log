@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  12 APR 2014 12:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.6)  13 APR 2014 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -299,26 +299,20 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (33.28532pt too wide) in paragraph at lines 27--27
-[]\OT1/cmr/bx/n/14.4 SR L: $[]\OT1/cmr/m/n/14.4 (300) \OMS/cmsy/m/n/14.4 ! \OML
-/cmm/m/it/14.4 b[]\OT1/cmr/m/n/14.4 (150) \OMS/cmsy/m/n/14.4 ! \OML/cmm/m/it/14
-.4 W[][]\OT1/cmr/m/n/14.4 (1)$ \OT1/cmr/bx/n/14.4 (AT-LAS[]2014[]I1286444 (1403
-.4853)) 
- []
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
+
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
 
-Overfull \hbox (47.20148pt too wide) in paragraph at lines 55--58
+Overfull \hbox (9.21458pt too wide) in paragraph at lines 55--58
  [] 
  []
 
 
-Overfull \hbox (51.07397pt too wide) in paragraph at lines 81--84
+Overfull \hbox (13.35014pt too wide) in paragraph at lines 81--84
  [] 
  []
 
@@ -331,13 +325,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3320 strings out of 493315
- 45063 string characters out of 6137904
- 128426 words of memory out of 5000000
- 6705 multiletter control sequences out of 15000+600000
+ 3321 strings out of 493315
+ 45069 string characters out of 6137904
+ 130426 words of memory out of 5000000
+ 6706 multiletter control sequences out of 15000+600000
  12073 words of font info for 48 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,13n,26p,635b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,26p,635b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
@@ -349,7 +343,7 @@ texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on L_T1bC1wN1_300-150-1.pdf (1 page, 107643 bytes).
+Output written on L_T1bC1wN1_300-150-1.pdf (1 page, 107491 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream

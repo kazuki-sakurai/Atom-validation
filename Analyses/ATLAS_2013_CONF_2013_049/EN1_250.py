@@ -49,14 +49,9 @@ if __name__ == '__main__':
     eff_dict = {}
     err_dict = {}
     for name, val, texname in initial_list:
-        try:
-            eff_dict[name] = eff_dict0[name]/eff_dict0['ee: Trigger']
-            err_dict[name] = err_dict0[name]/eff_dict0['ee: Trigger']        
-            NMC_first = Ntot_exp * eff_dict0['ee: Trigger'] # geussed from Atom efficiency             
-        except:
-            eff_dict[name] = 0.
-            err_dict[name] = 0.
-            NMC_first = Ntot_exp
+        eff_dict[name] = eff_dict0[name]/eff_dict0['ee: Trigger']
+        err_dict[name] = err_dict0[name]/eff_dict0['ee: Trigger']        
+        NMC_first = Ntot_exp * eff_dict0['ee: Trigger'] # geussed from Atom efficiency             
     
     table_lines = cutflow_generation(ananame, vname, table_caption, initial_list, eff_dict, err_dict, NMC_first)
 
@@ -64,10 +59,12 @@ if __name__ == '__main__':
     tex = tex_format()
     fout.write(tex.begin_document)
     fout.write('\n')
-    fout.write('\\subsection*{' + table_name + '} \n')
+    fout.write('\\subsection{' + table_name + '} \n')
     fout.write('\n')    
     fout.write(description)    
     fout.write('\n')        
     for t in table_lines: fout.write(t + '\n')
     fout.write('\n')        
     fout.write(tex.end_document)
+    fout.close()
+
