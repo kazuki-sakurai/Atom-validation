@@ -24,7 +24,7 @@ for ana in ${alist0[@]}; do
     fi
 done 
 
-source setting.sh
+source ./setting.sh
 
 if [[ ! -d $valdir/../Validation-events ]]; then
     echo $valdir/../Validation-events' will be created. OK?'  
@@ -78,7 +78,11 @@ for ana in ${alist[@]}; do
         nix-shell $nixpkgs_path -A hepNixOverlay.dev.AtomDev --command $script
 
         cd $valdir/Analyses/$ana
-        rm $vname.tex
+        if [[ ! -d backup ]]; then
+            mkdir backup
+        fi        
+        mv $vname.tex backup/
+        mv $vname.out backup/
         ./$vname.py $vname.root | tee $vname.out
         #pdflatex $vname.tex
         cd $valdir

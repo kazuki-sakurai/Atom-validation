@@ -24,7 +24,7 @@ for ana in ${alist0[@]}; do
     fi
 done 
 
-source setting.sh
+source ./setting.sh
 
 for ana in ${alist[@]}; do
 

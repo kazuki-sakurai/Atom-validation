@@ -11,7 +11,7 @@ def ToTexFormat(t):
 
 Input = ''
 try:
-    for i in range(1, len(argv)): Input = argv[i] + ' '
+    for i in range(1, len(sys.argv)): Input = sys.argv[i] + ' '
 except: pass
 
 if Input == '': Input = 'analyses_list'
