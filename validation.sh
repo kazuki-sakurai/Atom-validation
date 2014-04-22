@@ -75,14 +75,18 @@ for ana in ${alist[@]}; do
         script=$valdir/Analyses/$ana/script.sh
         sed -e "s|ATOM_PATH|$atom_path|g" job.sh | sed -e "s|ANA|$ana|g" | sed -e "s|VNAME|$vname|g" | sed -e "s|FNAME|$fname|g" > $script
         chmod 755 $script
-        nix-shell $nixpkgs_path -A hepNixOverlay.dev.AtomDev --command $script
+        #nix-shell $nixpkgs_path -A hepNixOverlay.dev.AtomDev --command $script
+
+        source $script
 
         cd $valdir/Analyses/$ana
         if [[ ! -d backup ]]; then
             mkdir backup
+        fi
+        if [[ -f $vname.tex ]]; then
+            mv $vname.tex backup/            
+            mv $vname.out backup/            
         fi        
-        mv $vname.tex backup/
-        mv $vname.out backup/
         ./$vname.py $vname.root | tee $vname.out
         #pdflatex $vname.tex
         cd $valdir
