@@ -26,7 +26,7 @@ if __name__ == '__main__':
     '''
 
     table_caption = '''
-        The cut-flow table for the $\\mu \\mu$ channel.
+        The cut-flow table for the $\\mu \\mu$ channel, $(m_{\\tilde \\mu}, m_{\\tilde \\chi_1^0}) = (250, 10)~GeV.$ 
     '''
 
     inputfile = vname + '.root'

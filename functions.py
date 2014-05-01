@@ -433,7 +433,7 @@ def table_writer(table_lists_orig, vname, table_caption, ratio_eff, ratio_eff_si
     texlines.append('\\renewcommand{\\arraystretch}{1.3}')
     texlines.append('\\begin{table}[h!]')
     texlines.append('\\begin{center}')
-    texlines.append('\\scalebox{0.65}[0.75]{ ')
+    texlines.append('\\scalebox{0.75}[0.75]{ ')
 
     texlines.append('\\begin{tabular}{c|l||c|c|>{\columncolor{yellow}}c|c||c|c|c|>{\columncolor{yellow}}c|c}')
     texlines.append('\\hline')
@@ -444,10 +444,9 @@ def table_writer(table_lists_orig, vname, table_caption, ratio_eff, ratio_eff_si
 
     texlines.append('\\end{tabular}')
     texlines.append('}')
-    texlines.append('\\caption{\\small ' + table_caption + '}') 
+    texlines.append('\\caption{\\footnotesize ' + table_caption + '}') 
     texlines.append('\\label{tab:cflow_' + vname + '}')
     texlines.append('\\end{center}')
-    texlines.append('\\label{default}')
     texlines.append('\\end{table}')
 
     #for t in texlines: print t

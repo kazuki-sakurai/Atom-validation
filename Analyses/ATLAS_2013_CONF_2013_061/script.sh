@@ -9,6 +9,10 @@ ana=ATLAS_2013_CONF_2013_061; vname=GttN1_1L6J; fname=LHC8_GttN1.hepmc
 event_path=$wkdir/../Validation-events/$ana
 
 cd $wkdir/Analyses/$ana
+if [[ ! -d backup ]]; then
+    mkdir backup
+fi
+mv $vname.root backup/
 atom -a $ana $event_path/$fname && mv atom.yoda.root $vname.root #&& mv atom.yoda.yoda $vname.yoda
 
 ######################################################

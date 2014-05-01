@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     vname = 'GQdirect_1425-525'
 
-    table_name = '$\\tilde q \\tilde g$ direct (1425, 400): (ATLAS\\_CONF\\_2013\\_047)'
+    table_name = '$\\tilde q \\tilde g$ direct (1425, 525): (ATLAS\\_CONF\\_2013\\_047)'
     description = '''
         \\begin{itemize}
         \\item  Process: $pp \\to \\tilde q \\tilde g \\to (q \\chi_1^0)(q q \\chi_1^0)$.

@@ -9,6 +9,10 @@ ana=ATLAS_2014_I1286444; vname=L_T1bC1wN1_400-390-195; fname=T1bC1wN1_400-390-19
 event_path=$wkdir/../Validation-events/$ana
 
 cd $wkdir/Analyses/$ana
+if [[ ! -d backup ]]; then
+    mkdir backup
+fi
+mv $vname.root backup/
 atom -a $ana $event_path/$fname && mv atom.yoda.root $vname.root #&& mv atom.yoda.yoda $vname.yoda
 
 ######################################################

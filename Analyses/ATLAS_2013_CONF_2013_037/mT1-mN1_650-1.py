@@ -25,7 +25,7 @@ if __name__ == '__main__':
     '''
 
     table_caption = '''
-        The cut-flow table for the $\\tilde t_1(500) \\to t \\tilde \\chi_1^0(200)$ model.
+        The cut-flow table for the $\\tilde t_1(650) \\to t \\tilde \\chi_1^0(1)$ model.
     '''
 
     inputfile = vname + '.root'
