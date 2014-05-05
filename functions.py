@@ -24,7 +24,8 @@ col = {
 
 def GetEfficiencies(filename):
 
-    filenameYML = filename.replace(".root",".yml")
+    #filenameYML = filename.replace(".root",".yml")
+    filenameYML = filename
     stream = open(filenameYML, 'r')    
     data = yaml.load(stream)
     analyses = data.get("Analyses")

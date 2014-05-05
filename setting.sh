@@ -2,8 +2,8 @@
 
 ###########################################################
 
-export nixpkgs_path=$HOME/atom/src/nixpkgs
-export atom_path=$HOME/atom/Atom-target
+#export nixpkgs_path=$HOME/atom/src/nixpkgs
+#export atom_path=$HOME/atom/Atom-target
 
 ###########################################################
 
