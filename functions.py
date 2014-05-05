@@ -1,9 +1,10 @@
 #! /usr/bin/env python
 
 __author__ = "Kazuki Sakurai <kazuki.sakurai@kcl.ac.uk>"
+# 2014-5-1: added yaml support (Andreas Weiler andreas.weiler@cern.ch)
 __version__ = "0.1"
 
-import ROOT
+import yaml
 import sys
 import os
 from math import *
@@ -23,32 +24,38 @@ col = {
 
 def GetEfficiencies(filename):
 
-    f = ROOT.TFile(filename)
+    #filenameYML = filename.replace(".root",".yml")
+    filenameYML = filename
+    stream = open(filenameYML, 'r')    
+    data = yaml.load(stream)
+    analyses = data.get("Analyses")
 
     resulteff = []
-
-    Nentries = ROOT.Efficiencies.GetEntries()
 
     effi = {}
     err = {}
     pid = {}
     ana_dict = {} 
-    for i in xrange(Nentries):
-        ROOT.Efficiencies.GetEntry(i)        
-        name = ROOT.Efficiencies.name.split('\x00')[0]        
-        ana = ROOT.Efficiencies.analysis
-        ana_dict[ana] = ana
-        __pid = ROOT.Efficiencies.procid
-        __effi  = ROOT.Efficiencies.value
-        __err  = ROOT.Efficiencies.error
-        if __pid != 0: continue
-        effi[name] = __effi
-        err[name] = __err
-        pid[name] = __pid
+
+    for anaKey in analyses.keys():
+        anaItem = analyses[anaKey]
+        if anaItem["Efficiencies"]:
+            for effItem in anaItem["Efficiencies"]:
+                ana = anaKey
+                ana_dict[ana] = ana
+                name = effItem["Name"]        
+                __pid = effItem["Sub-process ID"]
+                __effi  = effItem["Value"]
+                __err  = ((effItem["Error"][0]["Stat"])[1]-(effItem["Error"][0]["Stat"])[0])/2.
+                if __pid != 0: continue
+                effi[name] = __effi
+                err[name] = __err
+                pid[name] = __pid
+
 
     AnaList = ana_dict.keys()
     if len(AnaList) > 1:
-        print 'ERROR! More than one Analysis are found!!'
+        print 'ERROR! More than one Analysis found!!'
         for ana in AnaList: print ana
 
     return AnaList[0], effi, err, pid

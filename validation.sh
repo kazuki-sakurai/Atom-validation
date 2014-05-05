@@ -72,22 +72,39 @@ for ana in ${alist[@]}; do
             fi
         done
 
-        script=$valdir/Analyses/$ana/script.sh
-        sed -e "s|ATOM_PATH|$atom_path|g" job.sh | sed -e "s|ANA|$ana|g" | sed -e "s|VNAME|$vname|g" | sed -e "s|FNAME|$fname|g" > $script
-        chmod 755 $script
-        #nix-shell $nixpkgs_path -A hepNixOverlay.dev.AtomDev --command $script
+        #script=$valdir/Analyses/$ana/script.sh
+        #sed -e "s|ATOM_PATH|$atom_path|g" job.sh | sed -e "s|ANA|$ana|g" | sed -e "s|VNAME|$vname|g" | sed -e "s|FNAME|$fname|g" > $script
+        #chmod 755 $script
+        ##nix-shell $nixpkgs_path -A hepNixOverlay.dev.AtomDev --command $script
+        #source $script
 
-        source $script
+
+        ######################################################
+
+        #atom --list-analyses
+        event_path=$valdir/../Validation-events/$ana
 
         cd $valdir/Analyses/$ana
         if [[ ! -d backup ]]; then
             mkdir backup
         fi
-        if [[ -f $vname.tex ]]; then
+
+        if [[ -f $vname.root ]]; then
+            mv $vname.root backup/            
+            mv $vname.yml  backup/            
             mv $vname.tex backup/            
-            mv $vname.out backup/            
+            mv $vname.out backup/                        
         fi        
-        ./$vname.py $vname.root | tee $vname.out
+
+        echo 'atom -a '$ana $event_path/$fname 
+        atom -a $ana $event_path/$fname -H $vname
+
+        #atom -a $ana $event_path/$fname -H $vname         
+
+        ######################################################
+
+        #./$vname.py $vname.root | tee $vname.out
+        ./$vname.py $vname.yml  | tee $vname.out        
         #pdflatex $vname.tex
         cd $valdir
 
