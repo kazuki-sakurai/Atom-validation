@@ -96,8 +96,13 @@ for ana in ${alist[@]}; do
             mv $vname.out backup/                        
         fi        
 
-        echo 'atom -a '$ana $event_path/$fname 
-        atom -a $ana $event_path/$fname -H $vname
+        runana=$ana
+        if [[ $2 == "old" ]]; then
+            runana=$ana"_old"
+        fi
+
+        echo 'atom -a '$runana $event_path/$fname 
+        atom -a $runana $event_path/$fname -H $vname
 
         #atom -a $ana $event_path/$fname -H $vname         
 
